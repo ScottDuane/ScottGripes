@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./application.scss">
+    <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+    <title>Scott's Gripes</title>
+  </head>
+  <body id="main-body">
+    <script src="./gripe.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+    <div id="gripe-wrapper">
+      <div id="gripe-box"></div>
+      <img src="angryUnicorn.jpg" id="unicorn-image" />
+    </div>
+    <script>
+      $(document).ready(function () {
+        console.log("here");
+        new Gripes.GripeView();
+      })
+    </script>
+  </body>
+</html>
